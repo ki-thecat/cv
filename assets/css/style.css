@@ -187,7 +187,7 @@ body {
 .contact-info p {
     display: flex;
     align-items: center;
-    font-size: 0.85rem;  /* smaller */
+    font-size: 0.80rem;  /* smaller */
     margin-bottom: 6px;  /* tighter spacing */
 }
 
