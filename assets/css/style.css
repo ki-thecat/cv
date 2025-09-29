@@ -180,15 +180,15 @@ body {
 
 .cv-block .info-card.skills .progress {
     height: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* ===== Contact Info ===== */
 .contact-info p {
     display: flex;
     align-items: center;
-    font-size: 0.95rem;
-    margin-bottom: 8px;
+    font-size: 0.85rem;  /* smaller */
+    margin-bottom: 6px;  /* tighter spacing */
 }
 
 .contact-info .icon {
