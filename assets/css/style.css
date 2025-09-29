@@ -69,16 +69,18 @@ body{
 .cv-block.block-intro .btn {
   padding: 0.375rem 1rem;
   border-radius: 2em;
- }
+  display: inline-block;
+  margin-top: 15px;
+}
 
 .cv-block.block-intro .avatar{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: auto;
-    border-radius: 100px;
-    margin-bottom: 30px;
+    background-position: center;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
 }
 
 .cv-block.info{
@@ -114,7 +116,7 @@ body{
 
 .cv-block.info .group .organization{
     font-size: 0.85em;
-    background-color: #0ea0ff;
+    background-color: #a78bfa; /* lavender purple instead of bright blue */
     display: inline-block;
     color: #fff;
     padding: 2px 8px;
@@ -122,7 +124,7 @@ body{
 }
 
 .cv-block.info .education.group .organization{
-    background-color: #20c997; 
+    background-color: #a78bfa; /* keep same lavender purple for consistency */
 }
 
 .cv-block.info .group .item{
@@ -146,9 +148,11 @@ body{
 }
 
 .cv-block .info-card{
+    background: #f3e8ff; /* light purple background instead of blue */
     padding: 40px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
+    border-radius: 12px;
 }
 
 .cv-block .info-card h2{
@@ -178,6 +182,8 @@ body{
     max-width: 700px;
     margin: auto;
     font-size: 1.2em;
+    text-align: justify; /* justified text */
+    word-wrap: break-word;
 }
 
 .page-footer{
