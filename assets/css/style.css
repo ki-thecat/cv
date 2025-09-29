@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 
 body{
-     font-family: 'Inter', sans-serif;
+     font-family: 'Lato', sans-serif;
 }
 
 .page-navbar.navbar{
@@ -26,7 +26,7 @@ body{
 
 .download-template{
     color: #fff;
-    background-color: #A88AED;
+    background-color: #ed36ad;
     border: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -36,11 +36,11 @@ body{
 }
 
 .download-template:hover{
-    background-color: #b89ef0;
+    background-color: #fb5ec4;
 }
 
 .gradient{
-    background: linear-gradient(120deg, #A88AED, #CBD83B);
+    background: linear-gradient(120deg, #7f70f5, #0ea0ff);
     color: #fff !important;
 }
 
@@ -79,14 +79,6 @@ body{
     margin: auto;
     border-radius: 100px;
     margin-bottom: 30px;
-    overflow: hidden;
-}
-
-.cv-block.block-intro .avatar img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
 }
 
 .cv-block.info{
@@ -122,7 +114,7 @@ body{
 
 .cv-block.info .group .organization{
     font-size: 0.85em;
-    background-color: #CBD83B;
+    background-color: #0ea0ff;
     display: inline-block;
     color: #fff;
     padding: 2px 8px;
@@ -130,7 +122,7 @@ body{
 }
 
 .cv-block.info .education.group .organization{
-    background-color: #A88AED; 
+    background-color: #20c997; 
 }
 
 .cv-block.info .group .item{
