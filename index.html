@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style>
+      /* Smooth scroll effect */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
-   <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
       <div class="container">
         <a class="navbar-brand logo" href="#">Kalinaw!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="#work-experience">Work Experience</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#hobbies">Hobbies</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+
     <main class="page cv-page">
       <!-- INTRO -->
       <section class="cv-block block-intro border-bottom">
@@ -40,17 +41,17 @@
           <div class="avatar">
             <img src="assets/img/avatar.jpg" alt="Profile Picture">
           </div>
-          <a href="mailto:keithkylamarie.dacatimbang@msugensan.edu.ph?subject=Job%20Inquiry%20from%20CV%20Website&body=Hello%20Keith," 
-            class="btn btn-outline-primary hire-btn">Hire Me</a>
+          <a href="mailto:keithkylamarie.dacatimbang@msugensan.edu.ph?subject=Job%20Inquiry%20from%20CV%20Website&body=Hello%20Keith,"
+             class="btn btn-outline-primary hire-btn">Hire Me</a>
         </div>
       </section>
 
-      <!-- INFO -->
+      <!-- WORK EXPERIENCE -->
       <section class="cv-block info">
         <div class="container">
-          <!-- WORK -->
           <div class="work-experience group info-card" id="work-experience">
             <h2 class="text-center">Work Experience</h2>
+
             <div class="item">
               <div class="row">
                 <div class="col-md-6">
@@ -94,6 +95,7 @@
           <!-- EDUCATION -->
           <div class="education group info-card" id="education">
             <h2 class="text-center">Education</h2>
+
             <div class="item">
               <div class="row">
                 <div class="col-md-6">
@@ -106,6 +108,7 @@
                 </div>
               </div>
             </div>
+
             <div class="item">
               <div class="row">
                 <div class="col-md-6">
@@ -120,36 +123,30 @@
             </div>
           </div>
 
-          <!-- SKILLS & CONTACT -->
-          <div class="group">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="skills info-card">
-                  <h2>Skills</h2>
-                  <h3>CSS</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width:95%"></div>
-                  </div>
-                  <h3>PHP</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width:80%"></div>
-                  </div>
-                  <h3>JavaScript</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width:90%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="contact-info info-card">
-                  <h2>Contact Information</h2>
-                  <p><i class="ion-android-calendar icon"></i> 02/29/2004</p>
-                  <p><i class="ion-person icon"></i> Keith Kyla Marie G. Dacatimbang</p>
-                  <p><i class="ion-ios-telephone icon"></i> +63 932 174 24621</p>
-                  <p><i class="ion-at icon"></i> keithkylamarie.dacatimbang@msugensan.edu.ph</p>
-                </div>
-              </div>
+          <!-- SKILLS -->
+          <div class="skills info-card" id="skills">
+            <h2 class="text-center">Skills</h2>
+            <h3>CSS</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:95%"></div>
             </div>
+            <h3>PHP</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:80%"></div>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width:90%"></div>
+            </div>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="contact-info info-card">
+            <h2>Contact Information</h2>
+            <p><i class="ion-android-calendar icon"></i> 02/29/2004</p>
+            <p><i class="ion-person icon"></i> Keith Kyla Marie G. Dacatimbang</p>
+            <p><i class="ion-ios-telephone icon"></i> +63 932 174 24621</p>
+            <p><i class="ion-at icon"></i> keithkylamarie.dacatimbang@msugensan.edu.ph</p>
           </div>
 
           <!-- HOBBIES -->
@@ -170,8 +167,9 @@
         </div>
       </footer>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
 </html>
