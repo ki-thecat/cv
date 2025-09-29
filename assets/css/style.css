@@ -5,12 +5,23 @@ body {
     background-color: #f9f9fb;
 }
 
-/* Smooth scrolling & navbar offset */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* leave space for fixed navbar */
 }
 
+/* ===== Anchor Offset Fix ===== */
+#work-experience::before,
+#education::before,
+#skills::before,
+#hobbies::before {
+    content: "";
+    display: block;
+    height: 80px;   /* equal to navbar height */
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+/* ===== Navbar ===== */
 .page-navbar.navbar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -31,26 +42,12 @@ html {
     padding-top: 62px;
 }
 
-.download-template {
-    color: #fff;
-    background-color: #ed36ad;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: 10px 24px;
-    border-radius: 40px;
-}
-
-.download-template:hover {
-    background-color: #fb5ec4;
-}
-
 .gradient {
     background: linear-gradient(120deg, #a78bfa, #7f70f5);
     color: #fff !important;
 }
 
+/* ===== Intro Section ===== */
 .cv-block {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -62,25 +59,13 @@ html {
     margin: auto;
 }
 
-.cv-block.block-intro .about-me {
-    max-width: 800px;
-    margin: auto;
-}
-
-.cv-block.block-intro p {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-/* ===== Avatar & Hire Me ===== */
 .cv-block.block-intro .avatar {
     width: 180px;
     height: 180px;
     margin: 0 auto 15px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #a78bfa; /* optional border */
+    border: 4px solid #a78bfa;
 }
 
 .cv-block.block-intro .avatar img {
@@ -90,7 +75,6 @@ html {
     border-radius: 50%;
 }
 
-.cv-block.block-intro .btn,
 .hire-btn {
     display: inline-block;
     margin-top: 10px;
@@ -103,7 +87,6 @@ html {
     border: none;
 }
 
-.cv-block.block-intro .btn:hover,
 .hire-btn:hover {
     background-color: #7c3aed;
     color: #fff;
@@ -120,12 +103,12 @@ html {
 }
 
 .cv-block.info h3 {
-    font-size: 1.1rem; /* smaller headers */
+    font-size: 1.1rem;
 }
 
 .cv-block.info p,
 .cv-block.info span {
-    font-size: 0.95rem; /* smaller text */
+    font-size: 0.95rem;
 }
 
 .cv-block.info .group {
@@ -164,27 +147,45 @@ html {
 .info-card,
 .work-experience,
 .education,
+.skills-contact,
 .hobbies {
     background: #f3e8ff;
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 25px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.cv-block .info-card h2 {
-    margin-top: 0;
-    margin-bottom: 20px !important;
-    font-size: 1.2rem;
+/* ===== Skills + Contact merged ===== */
+.skills-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.cv-block .info-card.skills h3 {
+.skills-contact > div {
+    flex: 1 1 48%;
+    margin-bottom: 15px;
+}
+
+.skills-contact h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* ===== Skills ===== */
+.skills h3 {
     margin-top: 20px;
     font-size: 0.95rem;
     font-weight: bold;
 }
 
-.cv-block .info-card.skills .progress {
+.skills .progress {
     height: 4px;
     margin-bottom: 20px;
 }
@@ -193,8 +194,8 @@ html {
 .contact-info p {
     display: flex;
     align-items: center;
-    font-size: 0.80rem;  /* smaller */
-    margin-bottom: 6px;  /* tighter spacing */
+    font-size: 0.80rem;
+    margin-bottom: 6px;
 }
 
 .contact-info .icon {
@@ -244,24 +245,11 @@ html {
 }
 
 /* ===== Responsive ===== */
-@media (min-width: 768px) {
-    .cv-block {
-        padding-bottom: 100px;
-        padding-top: 100px; 
+@media (max-width: 767px) {
+    .skills-contact {
+        flex-direction: column;
     }
-
-    .cv-block.info .group .period {
-        text-align: right; 
-    }
-}
-
-@media (min-width: 576px) {
-    .navbar {
-        padding-top: 1.2rem;
-        padding-bottom: 1.2rem;
-    }
-
-    .portfolio-navbar.fixed-top + .page {
-        padding-top: 6rem;
+    .skills-contact > div {
+        flex: 1 1 100%;
     }
 }
