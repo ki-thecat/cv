@@ -7,7 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Increased to account for navbar height */
+  scroll-padding-top: 70px; /* Adjusted to show section headings properly */
 }
 
 .page-navbar.navbar {
@@ -146,6 +146,9 @@ html {
   padding: 25px;
   margin-bottom: 25px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cv-block .info-card h2 {
@@ -239,10 +242,5 @@ html {
 
   .portfolio-navbar.fixed-top + .page {
     padding-top: 6rem;
-  }
-  
-  /* Increase scroll padding for larger screens where navbar is bigger */
-  html {
-    scroll-padding-top: 120px;
   }
 }
