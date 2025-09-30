@@ -7,7 +7,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* prevents navbar overlap */
+  scroll-padding-top: 100px; /* Increased to account for navbar height */
 }
 
 .page-navbar.navbar {
@@ -239,5 +239,10 @@ html {
 
   .portfolio-navbar.fixed-top + .page {
     padding-top: 6rem;
+  }
+  
+  /* Increase scroll padding for larger screens where navbar is bigger */
+  html {
+    scroll-padding-top: 120px;
   }
 }
