@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV - Keith Dacatimbang</title>
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Font Awesome for Discord -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
     <div class="container">
       <a class="navbar-brand logo" href="#">Kalinaw!</a>
@@ -24,10 +18,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-experience">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,8 +50,8 @@
     <!-- INFO -->
     <section class="cv-block info">
       <div class="container">
-        <!-- WORK EXPERIENCE -->
-        <div id="work-experience" class="work-experience group info-card">
+        <!-- WORK -->
+        <div class="work-experience group info-card" id="work-experience">
           <h2 class="text-center">Work Experience</h2>
           <div class="item">
             <div class="row">
@@ -63,7 +65,6 @@
               </div>
             </div>
           </div>
-
           <div class="item">
             <div class="row">
               <div class="col-md-6">
@@ -76,7 +77,6 @@
               </div>
             </div>
           </div>
-
           <div class="item">
             <div class="row">
               <div class="col-md-6">
@@ -92,7 +92,7 @@
         </div>
 
         <!-- EDUCATION -->
-        <div id="education" class="education group info-card">
+        <div class="education group info-card" id="education">
           <h2 class="text-center">Education</h2>
           <div class="item">
             <div class="row">
@@ -121,11 +121,11 @@
         </div>
 
         <!-- SKILLS & CONTACT -->
-        <div id="skills" class="skills-contact info-card">
-          <h2 class="text-center">Skills & Contact Information</h2>
+        <div class="group" id="skills">
           <div class="row">
             <div class="col-md-6">
-              <div class="skills">
+              <div class="skills info-card">
+                <h2>Skills</h2>
                 <h3>CSS</h3>
                 <div class="progress">
                   <div class="progress-bar" role="progressbar" style="width:95%"></div>
@@ -141,7 +141,8 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="contact-info">
+              <div class="contact-info info-card">
+                <h2>Contact Information</h2>
                 <p><i class="ion-android-calendar icon"></i> 02/29/2004</p>
                 <p><i class="ion-person icon"></i> Keith Kyla Marie G. Dacatimbang</p>
                 <p><i class="ion-ios-telephone icon"></i> +63 932 174 24621</p>
@@ -152,7 +153,7 @@
         </div>
 
         <!-- HOBBIES -->
-        <div id="hobbies" class="hobbies group info-card">
+        <div class="hobbies group info-card" id="hobbies">
           <h2 class="text-center">Hobbies</h2>
           <p class="text-muted text-justify">I enjoy reading, doing word puzzles, playing mobile games with friends and looking at my past coding projects to "enhance" them.</p>
         </div>
@@ -163,18 +164,13 @@
     <footer class="page-footer">
       <div class="container">
         <div class="social-icons">
-          <a href="https://www.facebook.com/share/1Z9ywuSdDn/">
-            <i class="ion-social-facebook" title="Facebook"></i>
-          </a>
-          <a href="https://discord.com/users/1006047945008881738">
-            <i class="fab fa-discord" title="Discord"></i>
-          </a>
+          <a href="https://www.facebook.com/share/1Z9ywuSdDn/"><i class="ion-social-facebook" title="Facebook"></i></a>
+          <a href="https://discord.com/users/1006047945008881738"><i class="ion-social-twitter" title="Discord"></i></a>
         </div>
       </div>
     </footer>
   </main>
 
-  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
