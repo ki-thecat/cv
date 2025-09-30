@@ -153,7 +153,20 @@ html {
 .education,
 .skills-contact,
 .hobbies {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
+}
+
+/* Ensure all info cards have consistent width */
+.cv-block.info .group {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.info-card {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
 }
 
 .cv-block .info-card h2 {
