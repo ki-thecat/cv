@@ -7,7 +7,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Adjusted to show section headings properly */
 }
 
 .page-navbar.navbar {
@@ -23,8 +22,8 @@ html {
 }
 
 .page-navbar .logo {
-  font-family: inherit;  /* same as navbar */
-  font-size: calc(1rem + 15px); /* navbar font size +15px */
+  font-family: inherit;
+  font-size: calc(1rem + 15px);
   font-weight: bold;
 }
 
@@ -46,12 +45,12 @@ html {
   text-align: center;
   max-width: 850px;
   margin: auto;
-  padding-top: 40px;   /* reduced */
-  padding-bottom: 30px; /* reduced */
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .cv-block.block-intro .avatar {
-  width: 200px;    /* larger */
+  width: 200px;
   height: 200px;
   margin: 0 auto 15px auto;
   border-radius: 50%;
@@ -64,13 +63,13 @@ html {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  transform: scale(1.15); /* zoom in */
+  transform: scale(1.15);
 }
 
 .cv-block.block-intro .hire-btn {
   display: inline-block;
   margin-top: 10px;
-  margin-bottom: 10px; /* less space before next section */
+  margin-bottom: 10px;
   border-radius: 30px;
   padding: 10px 25px;
   font-size: 1rem;
@@ -148,25 +147,12 @@ html {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Add scroll margin to section headings */
-.work-experience,
-.education,
-.skills-contact,
-.hobbies {
+/* Add scroll margin to the container divs with IDs */
+#work-experience,
+#education,
+#skills,
+#hobbies {
   scroll-margin-top: 100px;
-}
-
-/* Ensure all info cards have consistent width */
-.cv-block.info .group {
-  max-width: 900px;
-  margin: 40px auto;
-}
-
-.info-card {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
 }
 
 .cv-block .info-card h2 {
